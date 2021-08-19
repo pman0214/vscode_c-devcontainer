@@ -1,0 +1,19 @@
+{
+    // run in terminal
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc -Wall -o $fileNameWithoutExt $fileName && ./$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -Wall -o $fileNameWithoutExt $fileName && ./$fileNameWithoutExt"
+    },
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "zsh",
+            "icon": "terminal"
+        },
+        "bash": {
+            "path": "bash",
+            "icon": "terminal"
+        },
+    },
+    "terminal.integrated.defaultProfile.linux": "bash"
+}
