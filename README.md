@@ -13,9 +13,6 @@ UNDER DEVELOPMENT!!! Tested only on macOS.
 - [Contribute](#contribute)
 - [License](#license)
 
-## Prerequisite
-
-
 ## Install
 
 ### Install Docker and VSCode
