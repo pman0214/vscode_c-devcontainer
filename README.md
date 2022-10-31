@@ -4,8 +4,6 @@
 
 > VSCode C development environment relying on Remote Container extension
 
-UNDER DEVELOPMENT!!! Tested only on macOS.
-
 ## Table of Contents
 
 - [Install](#install)
