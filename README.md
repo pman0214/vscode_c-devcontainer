@@ -4,8 +4,6 @@
 
 > VSCode C development environment relying on Remote Container extension
 
-UNDER DEVELOPMENT!!! Tested only on macOS.
-
 ## Table of Contents
 
 - [Install](#install)
@@ -59,4 +57,4 @@ Code runner is available, so you can use shortcut Ctrl+Alt+N (Ctrl+Option+N on m
 
 All the source files are released under the MIT license. See `LICENSE.txt`.
 
-* Copyright (c) 2021 Shigemi ISHIDA
+* Copyright (c) 2021-2025 Shigemi ISHIDA
