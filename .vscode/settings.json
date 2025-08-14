@@ -1,19 +1,50 @@
 {
-    // run in terminal
-    "code-runner.runInTerminal": true,
-    "code-runner.executorMap": {
-        "c": "cd $dir && gcc -Wall -o $fileNameWithoutExt $fileName && ./$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ -Wall -o $fileNameWithoutExt $fileName && ./$fileNameWithoutExt"
+  // C/C++ 設定
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.cppStandard": "c++11",
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**",
+    "/usr/include/**",
+    "/usr/local/include/**"
+  ],
+  "C_Cpp.default.defines": [],
+  "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+  "C_Cpp.default.compilerArgs": [
+    "-Wall",
+    "-std=c11"
+  ],
+  "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 2}", // 行頭カッコじゃないオートフォーマット
+  // エディタ設定
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  // ファイル関連付け
+  "files.associations": {
+    "*.h": "c",
+    "*.c": "c",
+    "Makefile": "makefile",
+    "*.mk": "makefile"
+  },
+  // 除外設定
+  "files.exclude": {
+    "**/obj": true,
+    "**/*.o": true,
+    "**/a.out": true,
+    "**/.DS_Store": true
+  },
+  // ターミナル設定
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "zsh",
+      "icon": "terminal"
     },
-    "terminal.integrated.profiles.linux": {
-        "zsh": {
-            "path": "zsh",
-            "icon": "terminal"
-        },
-        "bash": {
-            "path": "bash",
-            "icon": "terminal"
-        },
+    "bash": {
+      "path": "bash",
+      "icon": "terminal"
     },
-    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "terminal.integrated.defaultProfile.linux": "bash",
 }
