@@ -45,7 +45,7 @@ code vscode_c-devcontainer
 Instead of running the above command, you can open VSCode from the windows/mac menu and run "File > Open Workspace..." to specify the extracted `vscode_c-devcontainer` directory.
 
 You will be asked to reopen the folder in a remote container. Answer `Reopen in Conainer`.
-If you mistakenly answered `Don't Show Again...`, then press `F1` to open the Command Palette and execute `Remote-Containers: Reopen in Container`.
+If you mistakenly answered `Don't Show Again...`, then press `F1` to open the command palette and execute `Remote-Containers: Reopen in Container`.
 You can also run `Reopen in Container` from the bottom left green button.
 For the first time of `Reopen in Container`, it might take long time to build and start the docker container.
 
@@ -53,11 +53,11 @@ Now you are in a docker container. Write your C code, build the code, and run th
 Note that you can make subdirectories to put C source code files.
 
 Build and run tasks are available.
-Ctrl+Shift+B (Cmd+Shift+B on mac) to build, Ctrl+Shift+P (Cmd+Shift+P on mac) and select `run` to run your code.
+Ctrl+Shift+B (Cmd+Shift+B on mac) to build, press `F1` to execute `Tasks: Run Task` and `run` to run your code.
 
 ### To Stop
 
-Ctrl+Shift+P (Cmd+Shift+P on mac) to open command pallette and execute `Remote: Close Remote Connection`.
+Press `F1` to open command pallette and execute `Remote: Close Remote Connection`.
 Open terminal on your windows (or mac) and execute `docker` command to stop your container.
 
 First, lookup your container and specify container name.
